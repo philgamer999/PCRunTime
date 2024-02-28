@@ -110,12 +110,12 @@ namespace PCRunTime
 
             if (!File.Exists(totalFilePath))
             {
-                File.Create(totalFilePath);
+                File.WriteAllText(totalFilePath, "00:00:00");
             }
 
             if (!File.Exists(dailyFilePath))
             {
-                File.Create(dailyFilePath);
+                File.WriteAllText(dailyFilePath, "00:00:00");
             }
         }
 

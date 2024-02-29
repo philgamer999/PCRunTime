@@ -128,7 +128,7 @@ namespace PCRunTime
         public void GetData()
         {
             char[] dailyChars = File.ReadAllText(dailyFilePath).ToCharArray();
-            char[] totalChars = File.ReadAllText(dailyFilePath).ToCharArray();
+            char[] totalChars = File.ReadAllText(totalFilePath).ToCharArray();
 
             dSecond = int.Parse(string.Join("", dailyChars.Skip(0).Take(2)));
             dMinute = int.Parse(string.Join("", dailyChars.Skip(3).Take(2)));
@@ -143,7 +143,6 @@ namespace PCRunTime
         {
             File.WriteAllText(totalFilePath, $"{tSecond.ToString("D2")}:{tMinute.ToString("D2")}:{tHour.ToString("D2")}");
             File.WriteAllText(dailyFilePath, $"{dSecond.ToString("D2")}:{dMinute.ToString("D2")}:{dHour.ToString("D2")}");
-
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)

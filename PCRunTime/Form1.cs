@@ -28,6 +28,7 @@ namespace PCRunTime
             SetPaths();
             CreateFiles();
             GetData();
+            SetDisplay();
 
             timer.Interval = 1000;
             timer.Start();
@@ -89,9 +90,7 @@ namespace PCRunTime
                 tHour++;
             }
 
-            LabelTimeCurrent.Text = $"{cHour.ToString("D2")} : {cMinute.ToString("D2")} : {cSecond.ToString("D2")}";
-            LabelTimeToday.Text = $"{dHour.ToString("D2")} : {dMinute.ToString("D2")} : {dSecond.ToString("D2")}";
-            LabelTimeTotal.Text = $"{tHour.ToString("D2")} : {tMinute.ToString("D2")} : {tSecond.ToString("D2")}";
+            SetDisplay();
         }
 
         public void SetPaths()
@@ -117,6 +116,13 @@ namespace PCRunTime
             {
                 File.WriteAllText(dailyFilePath, "00:00:00");
             }
+        }
+
+        public void SetDisplay()
+        {
+            LabelTimeCurrent.Text = $"{cHour.ToString("D2")} : {cMinute.ToString("D2")} : {cSecond.ToString("D2")}";
+            LabelTimeToday.Text = $"{dHour.ToString("D2")} : {dMinute.ToString("D2")} : {dSecond.ToString("D2")}";
+            LabelTimeTotal.Text = $"{tHour.ToString("D2")} : {tMinute.ToString("D2")} : {tSecond.ToString("D2")}";
         }
 
         public void GetData()

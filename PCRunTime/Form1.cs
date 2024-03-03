@@ -100,6 +100,41 @@ namespace PCRunTime
             dailyFilePath = dataPath + "/daily_" + date + ".txt";
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LabelTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LabelTimeCurrent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LabelTimeToday_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LabelTimeTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void CreateFiles()
         {
             if (!Directory.Exists(dataPath))

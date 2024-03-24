@@ -121,7 +121,7 @@ namespace PCRunTime
 
             if (!File.Exists(startFilePath))
             {
-                File.WriteAllText(startFilePath, date);
+                File.WriteAllText(startFilePath, DateTime.Now.ToString("dd.MM.yyyy"));
             }
         }
 

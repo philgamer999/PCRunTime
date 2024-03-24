@@ -123,6 +123,7 @@ namespace PCRunTime
             if (!File.Exists(startFilePath))
             {
                 File.WriteAllText(startFilePath, dateDisplay);
+                MessageBox.Show("This application tracks your pc time.\r\nTimes will be automatically saved after one minute (Current Time).\r\nThe button \"Save and Quit\" saves the times before shutting down.\r\nThe current date and starting date are displayed on the bottom right.");
             }
         }
 

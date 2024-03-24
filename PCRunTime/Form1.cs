@@ -10,6 +10,7 @@ namespace PCRunTime
         public string dataPath = string.Empty;
         public string totalFilePath = string.Empty;
         public string dailyFilePath = string.Empty;
+        public string startFilePath = string.Empty;
         public string date = DateTime.Now.ToString("yyyy_MM_dd");
 
         public int cHour, cMinute, cSecond;
@@ -98,7 +99,74 @@ namespace PCRunTime
             dataPath = Application.StartupPath + "/data";
             totalFilePath = dataPath + "/total.txt";
             dailyFilePath = dataPath + "/daily_" + date + ".txt";
+            startFilePath = dataPath + "/start.txt";
         }
+
+        public void CreateFiles()
+        {
+            if (!Directory.Exists(dataPath))
+            {
+                Directory.CreateDirectory(dataPath);
+            }
+
+            if (!File.Exists(totalFilePath))
+            {
+                File.WriteAllText(totalFilePath, "00:00:00");
+            }
+
+            if (!File.Exists(dailyFilePath))
+            {
+                File.WriteAllText(dailyFilePath, "00:00:00");
+            }
+
+            if (!File.Exists(startFilePath))
+            {
+                File.WriteAllText(startFilePath, date);
+            }
+        }
+
+        public void SetDisplay()
+        {
+            LabelTimeCurrent.Text = $"{cHour.ToString("D2")} : {cMinute.ToString("D2")} : {cSecond.ToString("D2")}";
+            LabelTimeToday.Text = $"{dHour.ToString("D2")} : {dMinute.ToString("D2")} : {dSecond.ToString("D2")}";
+            LabelTimeTotal.Text = $"{tHour.ToString("D2")} : {tMinute.ToString("D2")} : {tSecond.ToString("D2")}";
+        }
+
+        public void GetData()
+        {
+            char[] dailyChars = File.ReadAllText(dailyFilePath).ToCharArray();
+            char[] totalChars = File.ReadAllText(totalFilePath).ToCharArray();
+            string startDate = File.ReadAllText(startFilePath).Trim();
+
+            dSecond = int.Parse(string.Join("", dailyChars.Skip(0).Take(2)));
+            dMinute = int.Parse(string.Join("", dailyChars.Skip(3).Take(2)));
+            dHour = int.Parse(string.Join("", dailyChars.Skip(6)));
+
+            tSecond = int.Parse(string.Join("", totalChars.Skip(0).Take(2)));
+            tMinute = int.Parse(string.Join("", totalChars.Skip(3).Take(2)));
+            tHour = int.Parse(string.Join("", totalChars.Skip(6)));
+
+            LabelDate.Text = startDate;
+        }
+
+        public void SaveData()
+        {
+            File.WriteAllText(totalFilePath, $"{tSecond.ToString("D2")}:{tMinute.ToString("D2")}:{tHour.ToString("D2")}");
+            File.WriteAllText(dailyFilePath, $"{dSecond.ToString("D2")}:{dMinute.ToString("D2")}:{dHour.ToString("D2")}");
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            SaveData();
+        }
+
+        private void ButtonSaveQuit_Click(object sender, EventArgs e)
+        {
+            SaveData();
+            Application.Exit();
+        }
+
+
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -133,62 +201,6 @@ namespace PCRunTime
         private void LabelTimeTotal_Click(object sender, EventArgs e)
         {
 
-        }
-
-        public void CreateFiles()
-        {
-            if (!Directory.Exists(dataPath))
-            {
-                Directory.CreateDirectory(dataPath);
-            }
-
-            if (!File.Exists(totalFilePath))
-            {
-                File.WriteAllText(totalFilePath, "00:00:00");
-            }
-
-            if (!File.Exists(dailyFilePath))
-            {
-                File.WriteAllText(dailyFilePath, "00:00:00");
-            }
-        }
-
-        public void SetDisplay()
-        {
-            LabelTimeCurrent.Text = $"{cHour.ToString("D2")} : {cMinute.ToString("D2")} : {cSecond.ToString("D2")}";
-            LabelTimeToday.Text = $"{dHour.ToString("D2")} : {dMinute.ToString("D2")} : {dSecond.ToString("D2")}";
-            LabelTimeTotal.Text = $"{tHour.ToString("D2")} : {tMinute.ToString("D2")} : {tSecond.ToString("D2")}";
-        }
-
-        public void GetData()
-        {
-            char[] dailyChars = File.ReadAllText(dailyFilePath).ToCharArray();
-            char[] totalChars = File.ReadAllText(totalFilePath).ToCharArray();
-
-            dSecond = int.Parse(string.Join("", dailyChars.Skip(0).Take(2)));
-            dMinute = int.Parse(string.Join("", dailyChars.Skip(3).Take(2)));
-            dHour = int.Parse(string.Join("", dailyChars.Skip(6)));
-
-            tSecond = int.Parse(string.Join("", totalChars.Skip(0).Take(2)));
-            tMinute = int.Parse(string.Join("", totalChars.Skip(3).Take(2)));
-            tHour = int.Parse(string.Join("", totalChars.Skip(6)));
-        }
-
-        public void SaveData()
-        {
-            File.WriteAllText(totalFilePath, $"{tSecond.ToString("D2")}:{tMinute.ToString("D2")}:{tHour.ToString("D2")}");
-            File.WriteAllText(dailyFilePath, $"{dSecond.ToString("D2")}:{dMinute.ToString("D2")}:{dHour.ToString("D2")}");
-        }
-
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            SaveData();
-        }
-
-        private void ButtonSaveQuit_Click(object sender, EventArgs e)
-        {
-            SaveData();
-            Application.Exit();
         }
     }
 }

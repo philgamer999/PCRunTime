@@ -39,6 +39,7 @@
             this.LabelTimeCurrent = new System.Windows.Forms.Label();
             this.ButtonSaveQuit = new System.Windows.Forms.Button();
             this.LabelDate = new System.Windows.Forms.Label();
+            this.LabelDateToday = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LabelTitle
@@ -167,12 +168,24 @@
             this.LabelDate.AutoSize = true;
             this.LabelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelDate.ForeColor = System.Drawing.Color.Lime;
-            this.LabelDate.Location = new System.Drawing.Point(281, 199);
+            this.LabelDate.Location = new System.Drawing.Point(261, 199);
             this.LabelDate.Name = "LabelDate";
             this.LabelDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabelDate.Size = new System.Drawing.Size(41, 9);
+            this.LabelDate.Size = new System.Drawing.Size(61, 9);
             this.LabelDate.TabIndex = 10;
-            this.LabelDate.Text = "01.01.0001";
+            this.LabelDate.Text = "Start: 01.01.0001";
+            // 
+            // LabelDateToday
+            // 
+            this.LabelDateToday.AutoSize = true;
+            this.LabelDateToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelDateToday.ForeColor = System.Drawing.Color.Lime;
+            this.LabelDateToday.Location = new System.Drawing.Point(281, 187);
+            this.LabelDateToday.Name = "LabelDateToday";
+            this.LabelDateToday.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabelDateToday.Size = new System.Drawing.Size(41, 9);
+            this.LabelDateToday.TabIndex = 11;
+            this.LabelDateToday.Text = "01.01.0001";
             // 
             // MainWindow
             // 
@@ -180,6 +193,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(334, 211);
+            this.Controls.Add(this.LabelDateToday);
             this.Controls.Add(this.LabelDate);
             this.Controls.Add(this.ButtonSaveQuit);
             this.Controls.Add(this.LabelTimeTotal);
@@ -214,6 +228,7 @@
         private System.Windows.Forms.Label LabelTimeCurrent;
         private System.Windows.Forms.Button ButtonSaveQuit;
         private System.Windows.Forms.Label LabelDate;
+        private System.Windows.Forms.Label LabelDateToday;
     }
 }
 

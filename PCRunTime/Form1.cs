@@ -12,6 +12,7 @@ namespace PCRunTime
         public string dailyFilePath = string.Empty;
         public string startFilePath = string.Empty;
         public string date = DateTime.Now.ToString("yyyy_MM_dd");
+        public string dateDisplay = DateTime.Now.ToString("dd.MM.yyyy");
 
         public int cHour, cMinute, cSecond;
         public int dHour, dMinute, dSecond;
@@ -121,7 +122,7 @@ namespace PCRunTime
 
             if (!File.Exists(startFilePath))
             {
-                File.WriteAllText(startFilePath, DateTime.Now.ToString("dd.MM.yyyy"));
+                File.WriteAllText(startFilePath, dateDisplay);
             }
         }
 
@@ -146,7 +147,8 @@ namespace PCRunTime
             tMinute = int.Parse(string.Join("", totalChars.Skip(3).Take(2)));
             tHour = int.Parse(string.Join("", totalChars.Skip(6)));
 
-            LabelDate.Text = startDate;
+            LabelDate.Text = "Start: " + startDate;
+            LabelDateToday.Text = dateDisplay;
         }
 
         public void SaveData()

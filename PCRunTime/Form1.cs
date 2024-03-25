@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
@@ -13,6 +14,8 @@ namespace PCRunTime
         public string startFilePath = string.Empty;
         public string date = DateTime.Now.ToString("yyyy_MM_dd");
         public string dateDisplay = DateTime.Now.ToString("dd.MM.yyyy");
+        public string startDate = string.Empty;
+        public string totalDays = string.Empty;
 
         public int cHour, cMinute, cSecond;
         public int dHour, dMinute, dSecond;
@@ -132,13 +135,17 @@ namespace PCRunTime
             LabelTimeCurrent.Text = $"{cHour.ToString("D2")} : {cMinute.ToString("D2")} : {cSecond.ToString("D2")}";
             LabelTimeToday.Text = $"{dHour.ToString("D2")} : {dMinute.ToString("D2")} : {dSecond.ToString("D2")}";
             LabelTimeTotal.Text = $"{tHour.ToString("D2")} : {tMinute.ToString("D2")} : {tSecond.ToString("D2")}";
+
+            totalDays = (DateTime.ParseExact(dateDisplay, "dd.MM.yyyy", null) - DateTime.ParseExact(startDate, "dd.MM.yyyy", null)).TotalDays.ToString();
+            LabelTotalDays.Text = totalDays + " Days";
+            LabelTimePerDay.Text = Math.Round((tHour / float.Parse(totalDays)), 2).ToString() + " h/D";
         }
 
         public void GetData()
         {
             char[] dailyChars = File.ReadAllText(dailyFilePath).ToCharArray();
             char[] totalChars = File.ReadAllText(totalFilePath).ToCharArray();
-            string startDate = File.ReadAllText(startFilePath).Trim();
+            startDate = File.ReadAllText(startFilePath).Trim();
 
             dSecond = int.Parse(string.Join("", dailyChars.Skip(0).Take(2)));
             dMinute = int.Parse(string.Join("", dailyChars.Skip(3).Take(2)));

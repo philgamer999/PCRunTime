@@ -54,7 +54,6 @@
             this.LabelTitle.Size = new System.Drawing.Size(113, 20);
             this.LabelTitle.TabIndex = 0;
             this.LabelTitle.Text = "PC Run Time";
-            this.LabelTitle.Click += new System.EventHandler(this.LabelTitle_Click);
             // 
             // LabelCompany
             // 
@@ -89,7 +88,6 @@
             this.label1.Size = new System.Drawing.Size(70, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Current Time:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -101,7 +99,6 @@
             this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Today Time:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -113,7 +110,6 @@
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Total Time:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // LabelTimeTotal
             // 
@@ -125,7 +121,6 @@
             this.LabelTimeTotal.Size = new System.Drawing.Size(61, 13);
             this.LabelTimeTotal.TabIndex = 8;
             this.LabelTimeTotal.Text = "00 : 00 : 00";
-            this.LabelTimeTotal.Click += new System.EventHandler(this.LabelTimeTotal_Click);
             // 
             // LabelTimeToday
             // 
@@ -137,7 +132,6 @@
             this.LabelTimeToday.Size = new System.Drawing.Size(61, 13);
             this.LabelTimeToday.TabIndex = 7;
             this.LabelTimeToday.Text = "00 : 00 : 00";
-            this.LabelTimeToday.Click += new System.EventHandler(this.LabelTimeToday_Click);
             // 
             // LabelTimeCurrent
             // 
@@ -149,7 +143,6 @@
             this.LabelTimeCurrent.Size = new System.Drawing.Size(61, 13);
             this.LabelTimeCurrent.TabIndex = 6;
             this.LabelTimeCurrent.Text = "00 : 00 : 00";
-            this.LabelTimeCurrent.Click += new System.EventHandler(this.LabelTimeCurrent_Click);
             // 
             // ButtonSaveQuit
             // 

@@ -42,6 +42,9 @@
             this.LabelDateToday = new System.Windows.Forms.Label();
             this.LabelTotalDays = new System.Windows.Forms.Label();
             this.LabelTimePerDay = new System.Windows.Forms.Label();
+            this.LabelTimePerWeek = new System.Windows.Forms.Label();
+            this.LabelTimePerMonth = new System.Windows.Forms.Label();
+            this.LabelTimePerYear = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LabelTitle
@@ -187,7 +190,7 @@
             this.LabelTotalDays.AutoSize = true;
             this.LabelTotalDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTotalDays.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTotalDays.Location = new System.Drawing.Point(281, 159);
+            this.LabelTotalDays.Location = new System.Drawing.Point(279, 170);
             this.LabelTotalDays.Name = "LabelTotalDays";
             this.LabelTotalDays.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.LabelTotalDays.Size = new System.Drawing.Size(29, 9);
@@ -199,12 +202,48 @@
             this.LabelTimePerDay.AutoSize = true;
             this.LabelTimePerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTimePerDay.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTimePerDay.Location = new System.Drawing.Point(281, 172);
+            this.LabelTimePerDay.Location = new System.Drawing.Point(279, 158);
             this.LabelTimePerDay.Name = "LabelTimePerDay";
             this.LabelTimePerDay.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.LabelTimePerDay.Size = new System.Drawing.Size(25, 9);
             this.LabelTimePerDay.TabIndex = 13;
             this.LabelTimePerDay.Text = "0 H/D";
+            // 
+            // LabelTimePerWeek
+            // 
+            this.LabelTimePerWeek.AutoSize = true;
+            this.LabelTimePerWeek.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTimePerWeek.ForeColor = System.Drawing.Color.Lime;
+            this.LabelTimePerWeek.Location = new System.Drawing.Point(279, 146);
+            this.LabelTimePerWeek.Name = "LabelTimePerWeek";
+            this.LabelTimePerWeek.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LabelTimePerWeek.Size = new System.Drawing.Size(27, 9);
+            this.LabelTimePerWeek.TabIndex = 14;
+            this.LabelTimePerWeek.Text = "0 H/W";
+            // 
+            // LabelTimePerMonth
+            // 
+            this.LabelTimePerMonth.AutoSize = true;
+            this.LabelTimePerMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTimePerMonth.ForeColor = System.Drawing.Color.Lime;
+            this.LabelTimePerMonth.Location = new System.Drawing.Point(279, 134);
+            this.LabelTimePerMonth.Name = "LabelTimePerMonth";
+            this.LabelTimePerMonth.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LabelTimePerMonth.Size = new System.Drawing.Size(26, 9);
+            this.LabelTimePerMonth.TabIndex = 15;
+            this.LabelTimePerMonth.Text = "0 H/M";
+            // 
+            // LabelTimePerYear
+            // 
+            this.LabelTimePerYear.AutoSize = true;
+            this.LabelTimePerYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTimePerYear.ForeColor = System.Drawing.Color.Lime;
+            this.LabelTimePerYear.Location = new System.Drawing.Point(279, 122);
+            this.LabelTimePerYear.Name = "LabelTimePerYear";
+            this.LabelTimePerYear.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LabelTimePerYear.Size = new System.Drawing.Size(24, 9);
+            this.LabelTimePerYear.TabIndex = 16;
+            this.LabelTimePerYear.Text = "0 H/Y";
             // 
             // MainWindow
             // 
@@ -212,6 +251,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(334, 211);
+            this.Controls.Add(this.LabelTimePerYear);
+            this.Controls.Add(this.LabelTimePerMonth);
+            this.Controls.Add(this.LabelTimePerWeek);
             this.Controls.Add(this.LabelTimePerDay);
             this.Controls.Add(this.LabelTotalDays);
             this.Controls.Add(this.LabelDateToday);
@@ -252,6 +294,9 @@
         private System.Windows.Forms.Label LabelDateToday;
         private System.Windows.Forms.Label LabelTotalDays;
         private System.Windows.Forms.Label LabelTimePerDay;
+        private System.Windows.Forms.Label LabelTimePerWeek;
+        private System.Windows.Forms.Label LabelTimePerMonth;
+        private System.Windows.Forms.Label LabelTimePerYear;
     }
 }
 

@@ -11,6 +11,8 @@ namespace PCRunTime
         public string dataPath = string.Empty;
         public string totalFilePath = string.Empty;
         public string dailyFilePath = string.Empty;
+        //public string monthlyFilePath = string.Empty;
+        //public string yearlyFilePath = string.Empty;
         public string startFilePath = string.Empty;
         public string date = DateTime.Now.ToString("yyyy_MM_dd");
         public string dateDisplay = DateTime.Now.ToString("dd.MM.yyyy");
@@ -139,6 +141,32 @@ namespace PCRunTime
             totalDays = (DateTime.ParseExact(dateDisplay, "dd.MM.yyyy", null) - DateTime.ParseExact(startDate, "dd.MM.yyyy", null)).TotalDays.ToString();
             LabelTotalDays.Text = totalDays + " Days";
             LabelTimePerDay.Text = Math.Round((tHour / float.Parse(totalDays)), 2).ToString() + " h/D";
+            if (float.Parse(totalDays) >= 7)
+            {
+                LabelTimePerWeek.Text = Math.Round((tHour / (float.Parse(totalDays) / 7)), 2).ToString() + " h/W";
+            }
+            else
+            {
+                LabelTimePerWeek.Text = tHour.ToString() + " h/W";
+            }
+
+            if (float.Parse(totalDays) >= 31)
+            {
+                LabelTimePerMonth.Text = Math.Round((tHour / (float.Parse(totalDays) / 31)), 2).ToString() + " h/M";
+            }
+            else
+            {
+                LabelTimePerMonth.Text = tHour.ToString() + " h/M";
+            }
+
+            if (float.Parse(totalDays) >= 365)
+            {
+                LabelTimePerYear.Text = Math.Round((tHour / (float.Parse(totalDays) / 365)), 2).ToString() + " h/Y";
+            }
+            else
+            {
+                LabelTimePerYear.Text = tHour.ToString() + " h/Y";
+            }
         }
 
         public void GetData()

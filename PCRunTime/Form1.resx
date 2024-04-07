@@ -117,4 +117,568 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LabelTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="LabelTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="LabelTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 9</value>
+  </data>
+  <data name="LabelTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 20</value>
+  </data>
+  <data name="LabelTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LabelTitle.Text" xml:space="preserve">
+    <value>PC Run Time</value>
+  </data>
+  <data name="&gt;&gt;LabelTitle.Name" xml:space="preserve">
+    <value>LabelTitle</value>
+  </data>
+  <data name="&gt;&gt;LabelTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelTitle.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="LabelCompany.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelCompany.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6pt</value>
+  </data>
+  <data name="LabelCompany.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 199</value>
+  </data>
+  <data name="LabelCompany.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 9</value>
+  </data>
+  <data name="LabelCompany.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LabelCompany.Text" xml:space="preserve">
+    <value>comp</value>
+  </data>
+  <data name="&gt;&gt;LabelCompany.Name" xml:space="preserve">
+    <value>LabelCompany</value>
+  </data>
+  <data name="&gt;&gt;LabelCompany.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelCompany.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelCompany.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="LabelVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelVersion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6pt</value>
+  </data>
+  <data name="LabelVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 187</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LabelVersion.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="LabelVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 9</value>
+  </data>
+  <data name="LabelVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LabelVersion.Text" xml:space="preserve">
+    <value>v.</value>
+  </data>
+  <data name="&gt;&gt;LabelVersion.Name" xml:space="preserve">
+    <value>LabelVersion</value>
+  </data>
+  <data name="&gt;&gt;LabelVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelVersion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelVersion.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 68</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Current Time:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 101</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Today Time:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 135</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Total Time:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="LabelTimeTotal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelTimeTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="LabelTimeTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 135</value>
+  </data>
+  <data name="LabelTimeTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="LabelTimeTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="LabelTimeTotal.Text" xml:space="preserve">
+    <value>00 : 00 : 00</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeTotal.Name" xml:space="preserve">
+    <value>LabelTimeTotal</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeTotal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeTotal.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LabelTimeToday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelTimeToday.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="LabelTimeToday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 101</value>
+  </data>
+  <data name="LabelTimeToday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="LabelTimeToday.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="LabelTimeToday.Text" xml:space="preserve">
+    <value>00 : 00 : 00</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeToday.Name" xml:space="preserve">
+    <value>LabelTimeToday</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeToday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeToday.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeToday.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LabelTimeCurrent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelTimeCurrent.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="LabelTimeCurrent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 68</value>
+  </data>
+  <data name="LabelTimeCurrent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="LabelTimeCurrent.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="LabelTimeCurrent.Text" xml:space="preserve">
+    <value>00 : 00 : 00</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeCurrent.Name" xml:space="preserve">
+    <value>LabelTimeCurrent</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeCurrent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeCurrent.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelTimeCurrent.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ButtonSaveQuit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="ButtonSaveQuit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="ButtonSaveQuit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 170</value>
+  </data>
+  <data name="ButtonSaveQuit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="ButtonSaveQuit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 31</value>
+  </data>
+  <data name="ButtonSaveQuit.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ButtonSaveQuit.Text" xml:space="preserve">
+    <value>Save and Quit</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveQuit.Name" xml:space="preserve">
+    <value>ButtonSaveQuit</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveQuit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveQuit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveQuit.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="LabelDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6pt</value>
+  </data>
+  <data name="LabelDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 199</value>
+  </data>
+  <data name="LabelDate.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="LabelDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 9</value>
+  </data>
+  <data name="LabelDate.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="LabelDate.Text" xml:space="preserve">
+    <value>Start: 01.01.0001</value>
+  </data>
+  <data name="&gt;&gt;LabelDate.Name" xml:space="preserve">
+    <value>LabelDate</value>
+  </data>
+  <data name="&gt;&gt;LabelDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelDate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelDate.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LabelDateToday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelDateToday.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6pt</value>
+  </data>
+  <data name="LabelDateToday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 187</value>
+  </data>
+  <data name="LabelDateToday.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="LabelDateToday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 9</value>
+  </data>
+  <data name="LabelDateToday.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="LabelDateToday.Text" xml:space="preserve">
+    <value>01.01.0001</value>
+  </data>
+  <data name="&gt;&gt;LabelDateToday.Name" xml:space="preserve">
+    <value>LabelDateToday</value>
+  </data>
+  <data name="&gt;&gt;LabelDateToday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelDateToday.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelDateToday.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="LabelTotalDays.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelTotalDays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6pt</value>
+  </data>
+  <data name="LabelTotalDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 170</value>
+  </data>
+  <data name="LabelTotalDays.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="LabelTotalDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 9</value>
+  </data>
+  <data name="LabelTotalDays.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="LabelTotalDays.Text" xml:space="preserve">
+    <value>0 Days</value>
+  </data>
+  <data name="&gt;&gt;LabelTotalDays.Name" xml:space="preserve">
+    <value>LabelTotalDays</value>
+  </data>
+  <data name="&gt;&gt;LabelTotalDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelTotalDays.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelTotalDays.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LabelTimePerDay.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelTimePerDay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6pt</value>
+  </data>
+  <data name="LabelTimePerDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 158</value>
+  </data>
+  <data name="LabelTimePerDay.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="LabelTimePerDay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 9</value>
+  </data>
+  <data name="LabelTimePerDay.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="LabelTimePerDay.Text" xml:space="preserve">
+    <value>0 H/D</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerDay.Name" xml:space="preserve">
+    <value>LabelTimePerDay</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerDay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerDay.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LabelTimePerWeek.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelTimePerWeek.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6pt</value>
+  </data>
+  <data name="LabelTimePerWeek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 146</value>
+  </data>
+  <data name="LabelTimePerWeek.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="LabelTimePerWeek.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 9</value>
+  </data>
+  <data name="LabelTimePerWeek.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="LabelTimePerWeek.Text" xml:space="preserve">
+    <value>0 H/W</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerWeek.Name" xml:space="preserve">
+    <value>LabelTimePerWeek</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerWeek.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerWeek.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerWeek.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LabelTimePerMonth.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelTimePerMonth.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6pt</value>
+  </data>
+  <data name="LabelTimePerMonth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 134</value>
+  </data>
+  <data name="LabelTimePerMonth.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="LabelTimePerMonth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 9</value>
+  </data>
+  <data name="LabelTimePerMonth.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="LabelTimePerMonth.Text" xml:space="preserve">
+    <value>0 H/M</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerMonth.Name" xml:space="preserve">
+    <value>LabelTimePerMonth</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerMonth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerMonth.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerMonth.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LabelTimePerYear.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelTimePerYear.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 6pt</value>
+  </data>
+  <data name="LabelTimePerYear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 122</value>
+  </data>
+  <data name="LabelTimePerYear.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="LabelTimePerYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 9</value>
+  </data>
+  <data name="LabelTimePerYear.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="LabelTimePerYear.Text" xml:space="preserve">
+    <value>0 H/Y</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerYear.Name" xml:space="preserve">
+    <value>LabelTimePerYear</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerYear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerYear.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelTimePerYear.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>334, 211</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>350, 250</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>350, 250</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PCRunTime</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainWindow</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

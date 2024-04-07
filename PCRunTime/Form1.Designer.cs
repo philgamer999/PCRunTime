@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.LabelTitle = new System.Windows.Forms.Label();
             this.LabelCompany = new System.Windows.Forms.Label();
             this.LabelVersion = new System.Windows.Forms.Label();
@@ -49,208 +50,114 @@
             // 
             // LabelTitle
             // 
-            this.LabelTitle.AutoSize = true;
-            this.LabelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelTitle, "LabelTitle");
             this.LabelTitle.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTitle.Location = new System.Drawing.Point(104, 9);
             this.LabelTitle.Name = "LabelTitle";
-            this.LabelTitle.Size = new System.Drawing.Size(113, 20);
-            this.LabelTitle.TabIndex = 0;
-            this.LabelTitle.Text = "PC Run Time";
             // 
             // LabelCompany
             // 
-            this.LabelCompany.AutoSize = true;
-            this.LabelCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelCompany, "LabelCompany");
             this.LabelCompany.ForeColor = System.Drawing.Color.Lime;
-            this.LabelCompany.Location = new System.Drawing.Point(0, 199);
             this.LabelCompany.Name = "LabelCompany";
-            this.LabelCompany.Size = new System.Drawing.Size(24, 9);
-            this.LabelCompany.TabIndex = 1;
-            this.LabelCompany.Text = "comp";
             // 
             // LabelVersion
             // 
-            this.LabelVersion.AutoSize = true;
-            this.LabelVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelVersion, "LabelVersion");
             this.LabelVersion.ForeColor = System.Drawing.Color.Lime;
-            this.LabelVersion.Location = new System.Drawing.Point(0, 187);
             this.LabelVersion.Name = "LabelVersion";
-            this.LabelVersion.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.LabelVersion.Size = new System.Drawing.Size(11, 9);
-            this.LabelVersion.TabIndex = 2;
-            this.LabelVersion.Text = "v.";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(49, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Current Time:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(49, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Today Time:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(49, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Total Time:";
             // 
             // LabelTimeTotal
             // 
-            this.LabelTimeTotal.AutoSize = true;
-            this.LabelTimeTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelTimeTotal, "LabelTimeTotal");
             this.LabelTimeTotal.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTimeTotal.Location = new System.Drawing.Point(190, 135);
             this.LabelTimeTotal.Name = "LabelTimeTotal";
-            this.LabelTimeTotal.Size = new System.Drawing.Size(61, 13);
-            this.LabelTimeTotal.TabIndex = 8;
-            this.LabelTimeTotal.Text = "00 : 00 : 00";
             // 
             // LabelTimeToday
             // 
-            this.LabelTimeToday.AutoSize = true;
-            this.LabelTimeToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelTimeToday, "LabelTimeToday");
             this.LabelTimeToday.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTimeToday.Location = new System.Drawing.Point(190, 101);
             this.LabelTimeToday.Name = "LabelTimeToday";
-            this.LabelTimeToday.Size = new System.Drawing.Size(61, 13);
-            this.LabelTimeToday.TabIndex = 7;
-            this.LabelTimeToday.Text = "00 : 00 : 00";
             // 
             // LabelTimeCurrent
             // 
-            this.LabelTimeCurrent.AutoSize = true;
-            this.LabelTimeCurrent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelTimeCurrent, "LabelTimeCurrent");
             this.LabelTimeCurrent.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTimeCurrent.Location = new System.Drawing.Point(190, 68);
             this.LabelTimeCurrent.Name = "LabelTimeCurrent";
-            this.LabelTimeCurrent.Size = new System.Drawing.Size(61, 13);
-            this.LabelTimeCurrent.TabIndex = 6;
-            this.LabelTimeCurrent.Text = "00 : 00 : 00";
             // 
             // ButtonSaveQuit
             // 
-            this.ButtonSaveQuit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ButtonSaveQuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.ButtonSaveQuit, "ButtonSaveQuit");
             this.ButtonSaveQuit.ForeColor = System.Drawing.Color.Lime;
-            this.ButtonSaveQuit.Location = new System.Drawing.Point(108, 170);
-            this.ButtonSaveQuit.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonSaveQuit.Name = "ButtonSaveQuit";
-            this.ButtonSaveQuit.Size = new System.Drawing.Size(117, 31);
-            this.ButtonSaveQuit.TabIndex = 9;
-            this.ButtonSaveQuit.Text = "Save and Quit";
             this.ButtonSaveQuit.UseVisualStyleBackColor = true;
             this.ButtonSaveQuit.Click += new System.EventHandler(this.ButtonSaveQuit_Click);
             // 
             // LabelDate
             // 
-            this.LabelDate.AutoSize = true;
-            this.LabelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelDate, "LabelDate");
             this.LabelDate.ForeColor = System.Drawing.Color.Lime;
-            this.LabelDate.Location = new System.Drawing.Point(261, 199);
             this.LabelDate.Name = "LabelDate";
-            this.LabelDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabelDate.Size = new System.Drawing.Size(61, 9);
-            this.LabelDate.TabIndex = 10;
-            this.LabelDate.Text = "Start: 01.01.0001";
             // 
             // LabelDateToday
             // 
-            this.LabelDateToday.AutoSize = true;
-            this.LabelDateToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelDateToday, "LabelDateToday");
             this.LabelDateToday.ForeColor = System.Drawing.Color.Lime;
-            this.LabelDateToday.Location = new System.Drawing.Point(281, 187);
             this.LabelDateToday.Name = "LabelDateToday";
-            this.LabelDateToday.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LabelDateToday.Size = new System.Drawing.Size(41, 9);
-            this.LabelDateToday.TabIndex = 11;
-            this.LabelDateToday.Text = "01.01.0001";
             // 
             // LabelTotalDays
             // 
-            this.LabelTotalDays.AutoSize = true;
-            this.LabelTotalDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelTotalDays, "LabelTotalDays");
             this.LabelTotalDays.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTotalDays.Location = new System.Drawing.Point(279, 170);
             this.LabelTotalDays.Name = "LabelTotalDays";
-            this.LabelTotalDays.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.LabelTotalDays.Size = new System.Drawing.Size(29, 9);
-            this.LabelTotalDays.TabIndex = 12;
-            this.LabelTotalDays.Text = "0 Days";
             // 
             // LabelTimePerDay
             // 
-            this.LabelTimePerDay.AutoSize = true;
-            this.LabelTimePerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelTimePerDay, "LabelTimePerDay");
             this.LabelTimePerDay.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTimePerDay.Location = new System.Drawing.Point(279, 158);
             this.LabelTimePerDay.Name = "LabelTimePerDay";
-            this.LabelTimePerDay.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.LabelTimePerDay.Size = new System.Drawing.Size(25, 9);
-            this.LabelTimePerDay.TabIndex = 13;
-            this.LabelTimePerDay.Text = "0 H/D";
             // 
             // LabelTimePerWeek
             // 
-            this.LabelTimePerWeek.AutoSize = true;
-            this.LabelTimePerWeek.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelTimePerWeek, "LabelTimePerWeek");
             this.LabelTimePerWeek.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTimePerWeek.Location = new System.Drawing.Point(279, 146);
             this.LabelTimePerWeek.Name = "LabelTimePerWeek";
-            this.LabelTimePerWeek.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.LabelTimePerWeek.Size = new System.Drawing.Size(27, 9);
-            this.LabelTimePerWeek.TabIndex = 14;
-            this.LabelTimePerWeek.Text = "0 H/W";
             // 
             // LabelTimePerMonth
             // 
-            this.LabelTimePerMonth.AutoSize = true;
-            this.LabelTimePerMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelTimePerMonth, "LabelTimePerMonth");
             this.LabelTimePerMonth.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTimePerMonth.Location = new System.Drawing.Point(279, 134);
             this.LabelTimePerMonth.Name = "LabelTimePerMonth";
-            this.LabelTimePerMonth.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.LabelTimePerMonth.Size = new System.Drawing.Size(26, 9);
-            this.LabelTimePerMonth.TabIndex = 15;
-            this.LabelTimePerMonth.Text = "0 H/M";
             // 
             // LabelTimePerYear
             // 
-            this.LabelTimePerYear.AutoSize = true;
-            this.LabelTimePerYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.LabelTimePerYear, "LabelTimePerYear");
             this.LabelTimePerYear.ForeColor = System.Drawing.Color.Lime;
-            this.LabelTimePerYear.Location = new System.Drawing.Point(279, 122);
             this.LabelTimePerYear.Name = "LabelTimePerYear";
-            this.LabelTimePerYear.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.LabelTimePerYear.Size = new System.Drawing.Size(24, 9);
-            this.LabelTimePerYear.TabIndex = 16;
-            this.LabelTimePerYear.Text = "0 H/Y";
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(334, 211);
             this.Controls.Add(this.LabelTimePerYear);
             this.Controls.Add(this.LabelTimePerMonth);
             this.Controls.Add(this.LabelTimePerWeek);
@@ -269,10 +176,7 @@
             this.Controls.Add(this.LabelCompany);
             this.Controls.Add(this.LabelTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximumSize = new System.Drawing.Size(350, 250);
-            this.MinimumSize = new System.Drawing.Size(350, 250);
             this.Name = "MainWindow";
-            this.Text = "PCRunTime";
             this.ResumeLayout(false);
             this.PerformLayout();
 

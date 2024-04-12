@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PCRunTime
@@ -11,9 +15,8 @@ namespace PCRunTime
         public string dataPath = string.Empty;
         public string totalFilePath = string.Empty;
         public string dailyFilePath = string.Empty;
-        //public string monthlyFilePath = string.Empty;
-        //public string yearlyFilePath = string.Empty;
         public string startFilePath = string.Empty;
+        public string dataFilePath = string.Empty;
         public string date = DateTime.Now.ToString("yyyy_MM_dd");
         public string dateDisplay = DateTime.Now.ToString("dd.MM.yyyy");
         public string startDate = string.Empty;
@@ -23,7 +26,7 @@ namespace PCRunTime
         public int dHour, dMinute, dSecond;
         public int tHour, tMinute, tSecond;
 
-        public Timer timer = new Timer();
+        public System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
 
         public MainWindow()
         {
@@ -106,6 +109,7 @@ namespace PCRunTime
             totalFilePath = dataPath + "/total.txt";
             dailyFilePath = dataPath + "/daily_" + date + ".txt";
             startFilePath = dataPath + "/start.txt";
+            dataFilePath = dataPath + "/dat.txt";
         }
 
         public void CreateFiles()
@@ -169,7 +173,7 @@ namespace PCRunTime
             }
         }
 
-        public void GetData()
+        public async void GetData()
         {
             char[] dailyChars = File.ReadAllText(dailyFilePath).ToCharArray();
             char[] totalChars = File.ReadAllText(totalFilePath).ToCharArray();
@@ -185,12 +189,38 @@ namespace PCRunTime
 
             LabelDate.Text = "Start: " + startDate;
             LabelDateToday.Text = dateDisplay;
+
+            await TaskPositionForm();
+        }
+
+        private async Task TaskPositionForm()
+        {
+            await Task.Run(() => { SetFormPosition(); });
+        }
+
+        private void SetFormPosition()
+        {
+            if (File.Exists(dataFilePath))
+            {
+                string[] dat = File.ReadAllLines(dataFilePath);
+                Console.WriteLine($"{dat[0]}:{dat[1]}");
+                Thread.Sleep(50);
+                if (InvokeRequired)
+                {
+                    Invoke((Action)delegate { SetFormPosition(); });
+                }
+                else
+                {
+                    this.Location = new Point(int.Parse(dat[0]), int.Parse(dat[1]));
+                }
+            }
         }
 
         public void SaveData()
         {
             File.WriteAllText(totalFilePath, $"{tSecond.ToString("D2")}:{tMinute.ToString("D2")}:{tHour.ToString("D2")}");
             File.WriteAllText(dailyFilePath, $"{dSecond.ToString("D2")}:{dMinute.ToString("D2")}:{dHour.ToString("D2")}");
+            File.WriteAllText(dataFilePath, $"{this.Location.X}\n{this.Location.Y}");
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
